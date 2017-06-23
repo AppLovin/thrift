@@ -140,6 +140,10 @@ public class TProtocolUtil {
         prot.readListEnd();
         break;
 
+      case TType.ENUM:
+        prot.readI32();
+        break;
+
       default:
         break;
     }
